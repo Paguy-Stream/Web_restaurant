@@ -7,3 +7,24 @@ body {
     margin: 0;
     padding: 0;
 }
+
+
+/* L'effet d'onde */
+.ripple {
+    position: fixed;
+    width: 20px; /* Taille initiale de l'onde */
+    height: 20px;
+    background: rgba(255, 255, 255, 0.5); /* Couleur translucide */
+    border-radius: 50%; /* Forme circulaire */
+    transform: scale(0); /* Commence à taille zéro */
+    animation: ripple-animation 0.8s ease-out; /* Animation fluide */
+    pointer-events: none; /* L'onde ne bloque pas les clics */
+}
+
+/* Animation des ondes */
+@keyframes ripple-animation {
+    100% {
+        transform: scale(15); /* Agrandissement de l'onde */
+        opacity: 0; /* Disparaît progressivement */
+    }
+}
