@@ -13,3 +13,6 @@ build/
 # Ignorer les fichiers de l'éditeur
 .vscode/
 .idea/
+
+# Ignorer le dossier images
+images/
