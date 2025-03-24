@@ -145,15 +145,23 @@ body {
   }
   
   .about {
+    border: 3px solid #c1b086; /* Couleur dorée */
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     gap: 3rem;
-    padding: 5rem 2rem;
+    padding: 4rem 2rem;
     background-color: var(--bg-color);
+    border: 8px double #c1b086; /* Double ligne */
+    border-radius: 15px; /* Coins arrondis */
+    padding: 6rem;
+    background-clip: padding-box;
+    box-shadow: inset 0 0 0 8px rgba(193,176,134,0.3); /* Ombre intérieure */
     position: relative;
     overflow: hidden;
   }
+
+  
   
   /* Effet de vague décoratif */
   .about::before {
@@ -171,7 +179,7 @@ body {
   .about-images {
     position: relative;
     flex: 1;
-    max-width: 50%;
+    max-width: 60%;
     height: 500px; /* Hauteur fixe pour mieux contrôler le layout */
     z-index: 1;
   }
@@ -183,12 +191,15 @@ body {
   }
   
   .image-vertical {
-    width: 70%;
-    height: 80%;
+    width: 60%;
+    height: 99%;
     border: 4px solid var(--secondary-color);
     border-radius: var(--border-radius);
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 
+    0 0 0 8px rgba(193, 176, 134, 0.2), /* Contour clair */
+    0 15px 35px -10px rgba(0, 0, 0, 0.3), /* Ombre douce */
+    inset 0 0 15px rgba(255, 255, 255, 0.2); /* Reflet intérieur */
     position: absolute;
     left: 0;
     top: 0;
@@ -198,12 +209,15 @@ body {
   }
   
   .image-horizontal {
-    width: 50%;
-    height: 50%;
+    width: 73%;
+    height: 48%;
     border: 4px solid var(--secondary-color);
     border-radius: var(--border-radius);
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 
+    0 0 0 8px rgba(193, 176, 134, 0.2), /* Contour clair */
+    0 15px 35px -10px rgba(0, 0, 0, 0.3), /* Ombre douce */
+    inset 0 0 15px rgba(255, 255, 255, 0.2); /* Reflet intérieur */
     position: absolute;
     right: 0;
     bottom: 0;
@@ -247,11 +261,12 @@ body {
   }
   
   .about-text h2 {
-    font-size: clamp(1.2rem, 2.5vw, 1.8rem); /* Responsive font size */
+    font-size: clamp(1rem, 1vw, 1rem); /* Responsive font size */
     color: var(--primary-color);
     margin-bottom: 1.5rem;
     position: relative;
     line-height: 1.3;
+    
   }
   
   .about-text h2::before {
@@ -266,14 +281,14 @@ body {
   }
   
   .about-text h3 {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     color: #664f14;
     margin-bottom: 1.2rem;
     font-weight: 600;
   }
   
   .about-text p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 1.8;
     color: var(--text-color);
     margin-bottom: 1.5rem;
