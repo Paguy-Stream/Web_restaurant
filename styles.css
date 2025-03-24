@@ -10,21 +10,58 @@ body {
 
 
 /* L'effet d'onde */
-.ripple {
+
+/* Conteneur pour les ondes */
+.ripple-container {
     position: fixed;
-    width: 20px; /* Taille initiale de l'onde */
-    height: 20px;
-    background: rgba(255, 255, 255, 0.5); /* Couleur translucide */
-    border-radius: 50%; /* Forme circulaire */
-    transform: scale(0); /* Commence à taille zéro */
-    animation: ripple-animation 0.8s ease-out; /* Animation fluide */
-    pointer-events: none; /* L'onde ne bloque pas les clics */
+    width: 100px; /* Taille totale des cercles */
+    height: 100px;
+    transform: translate(-50%, -50%); /* Centre au point de clic */
+    pointer-events: none;
+    z-index: 9999;
 }
 
-/* Animation des ondes */
+/* Style des cercles */
+.ripple {
+    position: absolute;
+    border-radius: 50%; /* Forme circulaire */
+    border: 2px solid rgba(173, 216, 230, 0.6); /* Couleur bleu clair translucide */
+    animation: ripple-animation 1s ease-out;
+    opacity: 0;
+}
+
+.ripple-0 {
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.ripple-1 {
+    width: 40px;
+    height: 40px;
+    animation-delay: 0.2s;
+}
+
+.ripple-2 {
+    width: 60px;
+    height: 60px;
+    animation-delay: 0.4s;
+}
+
+.ripple-3 {
+    width: 80px;
+    height: 80px;
+    animation-delay: 0.6s;
+}
+
+/* Animation pour les cercles */
 @keyframes ripple-animation {
+    0% {
+        transform: scale(0.5); /* Commence plus petit */
+        opacity: 1; /* Visible au début */
+    }
     100% {
-        transform: scale(15); /* Agrandissement de l'onde */
+        transform: scale(1); /* Propagation */
         opacity: 0; /* Disparaît progressivement */
     }
 }
