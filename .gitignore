@@ -1,0 +1,15 @@
+# Ignorer les fichiers de dépendances
+node_modules/
+vendor/
+
+# Ignorer les fichiers de configuration locaux
+.env
+.DS_Store
+
+# Ignorer les fichiers de compilation
+dist/
+build/
+
+# Ignorer les fichiers de l'éditeur
+.vscode/
+.idea/
