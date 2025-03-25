@@ -30,7 +30,7 @@ document.addEventListener('click', function (e) {
 
 const amenitiesContainer = document.querySelector('.amenities-container');
 
-// Événement pour le survol ou la proximité
+// Ajout de l'effet dynamique au survol
 amenitiesContainer.addEventListener('mousemove', (e) => {
     const { offsetX, offsetY, clientWidth, clientHeight } = e.target;
     const blurFactor = Math.min((offsetX / clientWidth) * 5, (offsetY / clientHeight) * 5);
@@ -39,6 +39,19 @@ amenitiesContainer.addEventListener('mousemove', (e) => {
 
 // Événement pour rétablir le style
 amenitiesContainer.addEventListener('mouseleave', () => {
-    amenitiesContainer.style.filter = 'blur(5px)'; // Retour à l'état initial
-    amenitiesContainer.style.transform = 'scale(1)'; // Retour à l'échelle normale
+    // Rétablir le style initial lorsque la souris quitte l'élément
+    amenitiesContainer.style.filter = 'blur(5px)';
+    amenitiesContainer.style.transform = 'scale(1)';
 });
+
+
+// pour le bouton home de ameneties
+
+document.querySelectorAll('.home-button').forEach(button => {
+    button.addEventListener('click', function(e) {
+        e.preventDefault();
+        // Ripple effect is handled by CSS
+        this.blur(); // Remove focus after click if needed
+    });
+});
+
