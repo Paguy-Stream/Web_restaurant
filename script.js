@@ -22,3 +22,23 @@ document.addEventListener('click', function (e) {
         rippleContainer.remove();
     });
 });
+
+
+
+
+
+
+const amenitiesContainer = document.querySelector('.amenities-container');
+
+// Événement pour le survol ou la proximité
+amenitiesContainer.addEventListener('mousemove', (e) => {
+    const { offsetX, offsetY, clientWidth, clientHeight } = e.target;
+    const blurFactor = Math.min((offsetX / clientWidth) * 5, (offsetY / clientHeight) * 5);
+    amenitiesContainer.style.filter = `blur(${5 - blurFactor}px)`;
+});
+
+// Événement pour rétablir le style
+amenitiesContainer.addEventListener('mouseleave', () => {
+    amenitiesContainer.style.filter = 'blur(5px)'; // Retour à l'état initial
+    amenitiesContainer.style.transform = 'scale(1)'; // Retour à l'échelle normale
+});
