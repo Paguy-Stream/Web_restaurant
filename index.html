@@ -193,6 +193,38 @@
         </div>
     </div>
 </section>
+<script>
+    function createShootingStar() {
+        const star = document.createElement("div");
+        star.classList.add("shooting-star");
+
+        // Position aléatoire en haut de l'écran
+        const startX = Math.random() * window.innerWidth;
+        const startY = Math.random() * window.innerHeight * 0.5; // Limite aux 50% supérieurs
+
+        star.style.left = `${startX}px`;
+        star.style.top = `${startY}px`;
+        document.body.appendChild(star);
+
+        // Calculer la trajectoire
+        const endX = startX + Math.random() * 300 - 150; // Déplacement aléatoire en X
+        const endY = startY + Math.random() * 200 + 100; // Déplacement vers le bas
+
+        // Activer l'animation
+        setTimeout(() => {
+            star.style.transform = `translate(${endX - startX}px, ${endY - startY}px)`;
+            star.style.opacity = "0";
+        }, 10);
+
+        // Supprimer l'étoile après animation
+        setTimeout(() => {
+            star.remove();
+        }, 1500);
+    }
+
+    // Générer des étoiles filantes aléatoirement
+    setInterval(createShootingStar, 800);
+</script>
 
 
 

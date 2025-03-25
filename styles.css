@@ -1359,3 +1359,39 @@ body {
     opacity: 0;
 }
 
+
+/* Effet d’étoiles filantes */
+
+@keyframes shooting-star {
+    0% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(200px, 100px);
+        opacity: 0;
+    }
+}
+
+.shooting-star {
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    width: 4px;
+    height: 4px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 8px white;
+    animation: shooting-star 1s linear infinite;
+}
+
+.shooting-star {
+    position: fixed;
+    width: 3px;
+    height: 3px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 5px white;
+    opacity: 0;
+    transition: transform 1.5s linear, opacity 1.5s;
+}
