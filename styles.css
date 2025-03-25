@@ -1083,3 +1083,279 @@ body {
         right: -30px;
     }
 }
+/* Section Restaurant - Version améliorée avec transitions textes/fonds */
+/* Section Restaurant */
+/* Section Restaurant */
+
+/* Section Restaurant */
+.restaurant {
+    padding: 1rem 2rem;
+    background-color: #f9f9f9; /* Fond général */
+    
+    margin-bottom: 40vh; /* Espace pour le fond blanc */
+    border: 8px double #c1b086; /* Double ligne */
+    border-radius: 15px; /* Coins arrondis */
+    padding: 0.5rem;
+    background-clip: padding-box;
+    box-shadow: inset 0 0 0 8px rgba(193,176,134,0.3); /* Ombre intérieure */
+    position: relative;
+    overflow: hidden;
+    margin: 20px 0;
+
+}
+
+.restaurant-wrapper {
+    display: flex; /* Alignement horizontal */
+    align-items: stretch; /* Centre verticalement */
+    gap: 0.8rem; /* Espace entre l'image et le contenu */
+    height: auto;
+    min-height: 50vh;
+    flex-wrap: nowrap; /* Responsivité */
+}
+
+/* Image principale */
+.restaurant-main-image {
+    padding: 0.3rem;
+    flex: 0.5; /* Prend 50% de l'espace */
+    display: flex;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+    justify-content: center;
+    border: 5px solid rgba(186, 145, 34, 0.6); /* Bordure bleue autour de l'image */
+    border-radius: 15px;
+    align-items: stretch;
+
+}
+
+.restaurant-main-image img {
+    max-width: 100%;
+    height: 100%;
+    width: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Contenu texte et galerie */
+.restaurant-content {
+    flex: 1; /* Plus large que l'image */
+    text-align: left; /* Aligne le contenu à gauche */
+}
+
+.header-text {
+    margin-bottom: 0.5rem;
+}
+
+.header-text h1 {
+    font-size: 26px;
+    color: #3f9cc1;
+    margin-bottom: 1rem;
+    position: relative;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.header-text h1::before {
+    content: "";
+    position: absolute;
+    top: -10px; /* Place le trait au-dessus du titre */
+    left: 0;
+    width: 80px; /* Longueur du trait horizontal */
+    height: 4px; /* Épaisseur du trait */
+    background-color: #c5b083;
+    border-radius: 2px;
+}
+
+.header-text p {
+    font-size: 14px;
+    color: #666;
+    text-align: justify; /* Justifie le texte */
+    line-height: 1.6;
+}
+/* Bouton Home */
+
+
+/* Galerie en Flexbox */
+.restaurant-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Images organisées en plusieurs lignes */
+    gap: 0.7rem; /* Espace entre les images */
+    justify-content: center; /* Centre les images horizontalement */
+}
+
+/* Image de la galerie */
+.gallery-item {
+    position: relative;
+    flex: 1 1 calc(50% - 1.5rem); /* Deux images par ligne */
+    width: 200px; /* Ajustez selon vos besoins */
+    height: 200px; /* Assure que la hauteur est cohérente */
+    overflow: hidden; /* Évite que l'image dépasse */
+    border-radius: 15px;
+    box-shadow: 0 0px 20px rgba(63, 156, 193, 0.6);
+    border: 5px solid rgba(186, 145, 34, 0.6); /* Bordure bleue autour de l'image */;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* Images */
+.gallery-item img {
+    width: 100%; /* Utiliser toute la largeur du conteneur */
+    height: 100%; /* Utiliser toute la hauteur du conteneur */
+    max-height: 300px; /* Taille maximale pour éviter des images trop grandes */
+    object-fit: cover; /* Remplir le cadre sans déformation */
+    display: block;
+    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Zoom au survol */
+    filter: brightness(0.9) contrast(1.1) saturate(1.2); /* Ajustements visuels */
+}
+
+
+.gallery-item:hover img {
+    transform: scale(1.1); /* Agrandit légèrement l'image */
+}
+
+/* Ombres Lumineuses */
+.gallery-item:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px; /* Suivre les coins arrondis */
+    box-shadow: 0 0 20px rgba(63, 156, 193, 0.6); /* Lumière subtile autour de l'image */
+    pointer-events: none; /* N'interfère pas avec le survol */
+}
+
+
+/* Texte superposé avec effet d'entrée et de sortie */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+    color: #c5b083;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Invisibility initiale */
+    transition: opacity 0.5s ease; /* Transition fluide pour apparaître/disparaître */
+    padding: 1.5rem;
+    text-align: center;
+    overflow: hidden; /* Empêche tout débordement */
+}
+
+.gallery-item:hover .overlay {
+    opacity: 1; /* Rend visible au survol */
+}
+
+/* Effet d'animation sur le titre */
+.overlay h3 {
+    font-size: 14px; /* Taille du titre */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    opacity: 0; /* Invisible initialement */
+    transform: translateY(50px); /* Hors de la vue vers le haut */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Apparition douce */
+    opacity: 0; /* Invisibility initiale */
+
+}
+
+
+.gallery-item:hover .overlay h3 {
+    opacity: 1; /* Rendre visible */
+    transform: translateY(0); /* Position centrale */
+}
+
+/* Effet d'animation sur le paragraphe */
+.overlay p {
+    font-size: 11px; /* Taille du texte */
+    line-height: 1.5;
+    opacity: 0; /* Invisible initialement */
+    transform: translateY(-50px); /* Hors de la vue vers le bas */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Apparition douce */
+}
+
+.gallery-item:hover .overlay p {
+    opacity: 1; /* Rendre visible */
+    transform: translateY(0); /* Position centrale */
+}
+
+/* Animation de sortie synchronisée */
+.gallery-item:not(:hover) .overlay h3 {
+    transform: translateY(50px); /* Retourne en haut */
+    opacity: 0; /* Disparaît */
+}
+
+.gallery-item:not(:hover) .overlay p {
+    transform: translateY(-50px); /* Retourne en bas */
+    opacity: 0; /* Disparaît */
+}
+ 
+.text-container {
+    position: relative;
+    width: 90%; /* Empêche le débordement */
+    background-color: rgba(210, 180, 140, 1); /* Bande blanche semi-transparente */
+    padding: 1rem;
+    border-radius: 15px; /* Coins arrondis */
+    text-align: left; /* Texte centré */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour mettre en valeur */
+}
+
+/* Style du titre */
+.text-container h3 {
+    font-size: 20px; /* Taille du titre */
+    color: #3f9cc1; /* Couleur principale */
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+/* Style du paragraphe */
+.text-container p {
+    font-size: 18px; /* Taille du texte */
+    color: #333; /* Couleur pour la lisibilité */
+    line-height: 1.2;
+    
+
+}
+
+
+
+
+/* Style de la Description */
+.description {
+    background: rgba(244, 221, 189, 0.5); /* Fond blanc semi-transparent */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #f5eded; /* Couleur du texte */
+    max-width: 70%; /* Évite les débordements */
+    text-align: center;
+    line-height: 1.4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Légère ombre */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Animation douce */
+    transform: translateY(30px); /* Hors de vue vers le bas */
+    opacity: 0;
+}
+
+.gallery-item:hover .description {
+    transform: translateY(0); /* Revient en place */
+    opacity: 1;
+}
+
+/* Style du Titre */
+.title {
+    background: rgb(244, 241, 239); /* Fond blanc semi-transparent */
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #3f9cc1; /* Couleur principale */
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    max-width: 90%; /* Évite les débordements */
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Légère ombre */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Animation douce */
+    transform: translateY(-30px); /* Hors de vue */
+    opacity: 0;
+}
+
