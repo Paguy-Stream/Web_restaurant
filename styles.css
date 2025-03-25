@@ -526,7 +526,7 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     position: relative;
-    width: 100%;
+    
     margin-bottom: 40vh; /* Espace pour le fond blanc */
     border: 8px double #c1b086; /* Double ligne */
     border-radius: 15px; /* Coins arrondis */
@@ -717,7 +717,7 @@ body {
 /* Fond blanc (ajoutez une div après la section dans le HTML) */
 .amenities-white-bg {
     width: 100%;
-    height: 40vh;
+    height: 30vh;
     background: white;
     position: relative;
     z-index: 1;
@@ -816,3 +816,270 @@ body {
     transition: all 0.1s ease; /* Faster transition for click */
 }
 
+/* Section Rooms - Version Premium */
+.rooms {
+    padding: 8rem 2rem;
+    background: linear-gradient(to bottom, #f9f9f9 0%, #ffffff 100%);
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 40vh; /* Espace pour le fond blanc */
+    border: 8px double #c1b086; /* Double ligne */
+    border-radius: 15px; /* Coins arrondis */
+    padding: 2rem;
+    background-clip: padding-box;
+    box-shadow: inset 0 0 0 8px rgba(193,176,134,0.3); /* Ombre intérieure */
+    position: relative;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.rooms::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect fill="%23c5b083" opacity="0.05" width="50" height="50" x="0" y="0"/></svg>');
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.rooms-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 4rem;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.header-text h2 {
+    font-size: 1.1rem;
+    color: #c5b083;
+    margin: 0 0 0.5rem 0;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+}
+
+.header-text h2::before,
+.header-text h2::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 1px;
+    background: #c5b083;
+}
+
+.header-text h2::before {
+    left: -50px;
+}
+
+.header-text h2::after {
+    right: -50px;
+}
+
+.header-text h4 {
+    font-size: 2.8rem;
+    color: #2a2a2a;
+    margin: 0;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+}
+
+/* Liste des chambres */
+.rooms-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* Cartes améliorées */
+.room-card {
+    background: white;
+    border: 3px solid #c5b083;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+    position: relative;
+}
+
+.room-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(197,176,131,0.1) 0%, rgba(255,255,255,0) 60%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.room-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.room-card:hover::before {
+    opacity: 1;
+}
+
+/* Image avec effet de zoom */
+.room-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.8s ease, filter 0.4s ease;
+}
+
+.room-card:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.03);
+}
+
+/* Contenu de la carte */
+.room-info {
+    padding: 1.8rem;
+    position: relative;
+}
+
+.room-info h3 {
+    font-size: 1.5rem;
+    color: #2a2a2a;
+    margin: 0 0 0.5rem 0;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.room-card:hover .room-info h3 {
+    color: #c5b083;
+}
+
+.room-info p {
+    font-size: 1.1rem;
+    color: #666;
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Badge de prix */
+.room-info::after {
+    content: 'Dès maintenant';
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    background: #c5b083;
+    color: white;
+    padding: 0.4rem 1.2rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.room-card:hover .room-info::after {
+    transform: translateY(-5px);
+    background: #2a6b8a;
+}
+
+/* Bouton amélioré */
+.btn-home {
+    background: #c5b083;
+    color: white;
+    border: 3px solid #ffffff;
+    padding: 0.8rem 2.2rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 15px rgba(197, 176, 131, 0.3);
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.btn-home a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: 0.6s;
+}
+
+.btn-home:hover {
+    background: #b8a276;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(197, 176, 131, 0.4);
+}
+
+.btn-home:hover::before {
+    left: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .rooms-header {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 3rem;
+    }
+    
+    .btn-home {
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .rooms {
+        padding: 5rem 1.5rem;
+    }
+    
+    .header-text h4 {
+        font-size: 2.2rem;
+    }
+    
+    .rooms-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .header-text h2::before,
+    .header-text h2::after {
+        width: 20px;
+    }
+    
+    .header-text h2::before {
+        left: -30px;
+    }
+    
+    .header-text h2::after {
+        right: -30px;
+    }
+}
