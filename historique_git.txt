@@ -1,0 +1,151 @@
+commit f9d936e0866fdfc0e284872682fb0cd967432885
+Author: BOUENDO <emmanuelpaguiel.bouendo@etu.univ-tours.fr>
+Date:   Tue Mar 25 20:53:01 2025 +0100
+
+    Ajout du HTML et CSS poue la section galerie
+
+commit 5aaf076861b4770fded2c19c218861da9c36d4fc
+Author: BOUENDO <emmanuelpaguiel.bouendo@etu.univ-tours.fr>
+Date:   Tue Mar 25 15:20:00 2025 +0100
+
+    ajout CSS et javascript dans la branche restaurant
+
+commit 1c4aaa128b0000e6fa0792fa84b246eaaea72e12
+Author: BOUENDO <emmanuelpaguiel.bouendo@etu.univ-tours.fr>
+Date:   Tue Mar 25 14:27:01 2025 +0100
+
+    j'ai intégré une fonction Javascript dans mon HTML en attendant de régler le problème avec le fichier script.js et CSS dans
+
+commit 17bd6e55f16564ba236d684cd53b559126c62b7e
+Author: BOUENDO <emmanuelpaguiel.bouendo@etu.univ-tours.fr>
+Date:   Tue Mar 25 14:22:45 2025 +0100
+
+    Ajout de la section galerie HTML et CSS et quelques configuration Javascript que je reverrais plus tard
+
+commit 8c847b6231ecb3322fbaa009abc71e02049b0409
+Author: BOUENDO <emmanuelpaguiel.bouendo@etu.univ-tours.fr>
+Date:   Tue Mar 25 10:20:52 2025 +0100
+
+    Ajout de la serction Romms html et CSS ainsi qu'une modification de la section ameneties pour un bon cadre
+
+commit 9a75c396bc5b823e02d386b7baa7fd326ba9913b
+Author: BOUENDO <emmanuelpaguiel.bouendo@etu.univ-tours.fr>
+Date:   Tue Mar 25 09:14:53 2025 +0100
+
+    Amélioration du  bouton home dans la section amenities ains que su CSS et HTML
+
+commit 1c82f5a381e323bbcc45eefe3533196bb909fcb7
+Author: BOUENDO <emmanuelpaguiel.bouendo@etu.univ-tours.fr>
+Date:   Tue Mar 25 04:39:30 2025 +0100
+
+    correction erreur de syntax partie .amenities::before(-webkit-mask)
+
+commit 38a6a004ac28077ecfaec223d18adcda35b4c147
+Author: BOUENDO <emmanuelpaguiel.bouendo@etu.univ-tours.fr>
+Date:   Tue Mar 25 04:32:38 2025 +0100
+
+    Ajout de la section amenity avec HTML, CSS et Javascript
+
+commit 159560fe137721b1103abe3c463f4765e4cb43ac
+Author: BOUENDO <emmanuelpaguiel.bouendo@etu.univ-tours.fr>
+Date:   Tue Mar 25 01:14:36 2025 +0100
+
+    Css du bouton home dans la section about plus correction
+
+commit 7b4dac9783d7119121323c5534427b9153e26c64
+Author: BOUENDO <emmanuelpaguiel.bouendo@etu.univ-tours.fr>
+Date:   Tue Mar 25 00:34:43 2025 +0100
+
+    Amélioration de la section about
+
+commit e7c26ac3a9f1b41f130f01c740306325e4b54bb7
+Author: BOUENDO <emmanuelpaguiel.bouendo@etu.univ-tours.fr>
+Date:   Mon Mar 24 18:19:07 2025 +0100
+
+    correction de la section home
+
+commit dcc8db53bd8062b271a6071b35e2eff2d1d58106
+Merge: 846e66a 98d3d56
+Author: BOUENDO <emmanuelpaguiel.bouendo@etu.univ-tours.fr>
+Date:   Mon Mar 24 18:07:49 2025 +0100
+
+    Résolution des conflits
+
+commit 846e66a3572122d17b924c7f1cc989d0d3b7e3ff
+Author: BOUENDO <emmanuelpaguiel.bouendo@etu.univ-tours.fr>
+Date:   Mon Mar 24 17:54:11 2025 +0100
+
+    Ajout de la section About avec HTML et CSS
+
+commit 98d3d56320301f6c4a7a209dd409313e1ef4b953
+Author: BOUENDO <emmanuelpaguiel.bouendo@etu.univ-tours.fr>
+Date:   Mon Mar 24 17:13:46 2025 +0100
+
+    Mise à jour de l'effet de propagation d'onde en CSS et Java script
+
+commit fad703415ba3107d1332960540d3e5b7374fc419
+Author: BOUENDO <emmanuelpaguiel.bouendo@etu.univ-tours.fr>
+Date:   Mon Mar 24 16:41:11 2025 +0100
+
+    Ajout du HTML + CSS pour la section Header
+
+commit 9483760028dcbe1a600a5ed0c4090abb26fec347
+Author: BOUENDO <emmanuelpaguiel.bouendo@etu.univ-tours.fr>
+Date:   Mon Mar 24 16:04:58 2025 +0100
+
+    Ajout des styles pour la barre de naviguation
+
+commit ff75c3c5cde3b46e33a3b552bcd07a3683dfbff7
+Author: BOUENDO <emmanuelpaguiel.bouendo@etu.univ-tours.fr>
+Date:   Mon Mar 24 16:02:34 2025 +0100
+
+    Ajout de l'effet d'onde pour les interactions
+
+commit 0c92bb08cf7f2acc998614de6f18e528b8ab2c75
+Author: BOUENDO <emmanuelpaguiel.bouendo@etu.univ-tours.fr>
+Date:   Mon Mar 24 15:57:55 2025 +0100
+
+    Ajout des styles généraux pour le body
+
+commit f1c0b7d2991c87ce73ac48411e4f366af1f23a9d
+Author: BOUENDO <emmanuelpaguiel.bouendo@etu.univ-tours.fr>
+Date:   Mon Mar 24 15:43:23 2025 +0100
+
+    Créationn de la navigation principale dans la balise <nav>
+
+commit 708e483b681679cdafc4d5fa24ad91e133a6d7b8
+Author: BOUENDO <emmanuelpaguiel.bouendo@etu.univ-tours.fr>
+Date:   Mon Mar 24 15:39:15 2025 +0100
+
+    "Ajout des métadonnées et des liens CSS dans la balise <head>"
+
+commit 050a2619d61f2f9d60d830a6b712539d091c17d6
+Author: BOUENDO <emmanuelpaguiel.bouendo@etu.univ-tours.fr>
+Date:   Mon Mar 24 14:50:07 2025 +0100
+
+    Description du projet
+
+commit f80cd05b8b0a4ba27baf7715eafeb6c94de3a3db
+Author: BOUENDO <emmanuelpaguiel.bouendo@etu.univ-tours.fr>
+Date:   Mon Mar 24 14:24:57 2025 +0100
+
+    Ignorer le dossier images
+
+commit b7d12977db53f821ea2b473c92e0b7cc9551083f
+Merge: cc621d3 aa69e8f
+Author: BOUENDO <emmanuelpaguiel.bouendo@etu.univ-tours.fr>
+Date:   Mon Mar 24 14:16:03 2025 +0100
+
+    Merge branch 'main' of https://github.com/Paguy-Stream/Web_restaurant
+
+commit aa69e8f04a1da0036edbbb8c5aa723af64794b19
+Author: BOUENDO <emmanuelpaguiel.bouendo@etu.univ-tours.fr>
+Date:   Mon Mar 24 13:46:56 2025 +0100
+
+    Initial commit
+
+commit cc621d39ea70917899aa626a3e976f7ca926d8e3
+Author: BOUENDO <emmanuelpaguiel.bouendo@etu.univ-tours.fr>
+Date:   Mon Mar 24 13:33:51 2025 +0100
+
+    Ajout des fichiers initiaux : index.html, styles.css, script.js, et .gitignore, images

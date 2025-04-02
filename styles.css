@@ -825,7 +825,7 @@ body {
     margin-bottom: 40vh; /* Espace pour le fond blanc */
     border: 8px double #c1b086; /* Double ligne */
     border-radius: 15px; /* Coins arrondis */
-    padding: 2rem;
+    padding: 4rem;
     background-clip: padding-box;
     box-shadow: inset 0 0 0 8px rgba(193,176,134,0.3); /* Ombre intérieure */
     position: relative;
@@ -1084,8 +1084,6 @@ body {
     }
 }
 /* Section Restaurant - Version améliorée avec transitions textes/fonds */
-/* Section Restaurant */
-/* Section Restaurant */
 
 /* Section Restaurant */
 .restaurant {
@@ -1095,7 +1093,7 @@ body {
     margin-bottom: 40vh; /* Espace pour le fond blanc */
     border: 8px double #c1b086; /* Double ligne */
     border-radius: 15px; /* Coins arrondis */
-    padding: 0.5rem;
+    padding: 2.5rem;
     background-clip: padding-box;
     box-shadow: inset 0 0 0 8px rgba(193,176,134,0.3); /* Ombre intérieure */
     position: relative;
@@ -1406,7 +1404,7 @@ body {
     margin-bottom: 40vh; /* Espace pour le fond blanc */
     border: 8px double #c1b086; /* Double ligne */
     border-radius: 25px; /* Coins arrondis */
-    padding: 0.5rem;
+    padding: 0.2rem;
     background-clip: padding-box;
     box-shadow: inset 0 0 0 8px rgba(193,176,134,0.3); /* Ombre intérieure */
     position: relative;

@@ -1,0 +1,25 @@
+f9d936e Ajout du HTML et CSS poue la section galerie
+5aaf076 ajout CSS et javascript dans la branche restaurant
+1c4aaa1 j'ai intégré une fonction Javascript dans mon HTML en attendant de régler le problème avec le fichier script.js et CSS dans
+17bd6e5 Ajout de la section galerie HTML et CSS et quelques configuration Javascript que je reverrais plus tard
+8c847b6 Ajout de la serction Romms html et CSS ainsi qu'une modification de la section ameneties pour un bon cadre
+9a75c39 Amélioration du  bouton home dans la section amenities ains que su CSS et HTML
+1c82f5a correction erreur de syntax partie .amenities::before(-webkit-mask)
+38a6a00 Ajout de la section amenity avec HTML, CSS et Javascript
+159560f Css du bouton home dans la section about plus correction
+7b4dac9 Amélioration de la section about
+e7c26ac correction de la section home
+dcc8db5 Résolution des conflits
+846e66a Ajout de la section About avec HTML et CSS
+98d3d56 Mise à jour de l'effet de propagation d'onde en CSS et Java script
+fad7034 Ajout du HTML + CSS pour la section Header
+9483760 Ajout des styles pour la barre de naviguation
+ff75c3c Ajout de l'effet d'onde pour les interactions
+0c92bb0 Ajout des styles généraux pour le body
+f1c0b7d Créationn de la navigation principale dans la balise <nav>
+708e483 "Ajout des métadonnées et des liens CSS dans la balise <head>"
+050a261 Description du projet
+f80cd05 Ignorer le dossier images
+b7d1297 Merge branch 'main' of https://github.com/Paguy-Stream/Web_restaurant
+aa69e8f Initial commit
+cc621d3 Ajout des fichiers initiaux : index.html, styles.css, script.js, et .gitignore, images
