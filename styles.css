@@ -1105,7 +1105,7 @@ body {
 .restaurant-wrapper {
     display: flex; /* Alignement horizontal */
     align-items: stretch; /* Centre verticalement */
-    gap: 0.8rem; /* Espace entre l'image et le contenu */
+    gap: 1.5rem; /* Espace entre l'image et le contenu */
     height: auto;
     min-height: 50vh;
     flex-wrap: nowrap; /* Responsivité */
@@ -1237,7 +1237,7 @@ body {
     align-items: center;
     opacity: 0; /* Invisibility initiale */
     transition: opacity 0.5s ease; /* Transition fluide pour apparaître/disparaître */
-    padding: 1.5rem;
+    padding: 0.2rem;
     text-align: center;
     overflow: hidden; /* Empêche tout débordement */
 }
@@ -1293,7 +1293,7 @@ body {
     position: relative;
     width: 90%; /* Empêche le débordement */
     background-color: rgba(210, 180, 140, 1); /* Bande blanche semi-transparente */
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 15px; /* Coins arrondis */
     text-align: left; /* Texte centré */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour mettre en valeur */
@@ -1322,7 +1322,7 @@ body {
 /* Style de la Description */
 .description {
     background: rgba(244, 221, 189, 0.5); /* Fond blanc semi-transparent */
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 3rem;
     border-radius: 5px;
     font-size: 16px;
     color: #f5eded; /* Couleur du texte */
@@ -1343,7 +1343,7 @@ body {
 /* Style du Titre */
 .title {
     background: rgb(244, 241, 239); /* Fond blanc semi-transparent */
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 5rem;
     border-radius: 5px;
     font-size: 12px;
     color: #3f9cc1; /* Couleur principale */
@@ -1657,3 +1657,6 @@ input[id="img2"]:checked ~ .gallery-nav label[for="img2"] {
         height: 250px;
     }
 }
+
+
+
